@@ -7,8 +7,9 @@ To run the application locally, follow these steps:
 1. Clone the repository to your local machine.
 2. Navigate to the project directory.
 3. Install dependencies by running ```npm install```.
-4. Start the development server with ```npm run dev```.
-5. Open your browser and go to localhost to view the application using the port number.
+4. After installing dependencies, replace ```apiKey = import.meta.env.VITE_API_KEY;``` in WeatherApp.js with your api key.
+5. Start the development server with ```npm run dev```.
+6. Open your browser and go to localhost to view the application using the port number.
 ## Dependencies:
 
 The application relies on the following external libraries and tools:

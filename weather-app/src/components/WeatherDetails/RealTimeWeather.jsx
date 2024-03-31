@@ -1,4 +1,3 @@
-// RealTimeWeather.js
 import React from "react";
 
 function RealTimeWeather({ realTimeWeather }) {
@@ -9,18 +8,18 @@ function RealTimeWeather({ realTimeWeather }) {
         <strong>Date:</strong>{" "}
         {new Date(realTimeWeather.data.time).toLocaleDateString("en-US", {
           weekday: "long",
-        })}
+        })} {/* Display the date in the format: Weekday, Month Day, Year */}
       </p>
       <p className="info-text">
         <strong>Time:</strong>{" "}
-        {new Date(realTimeWeather.data.time).toLocaleTimeString()}
+        {new Date(realTimeWeather.data.time).toLocaleTimeString()} {/* Display the time in HH:MM:SS format */}
       </p>
       <p className="info-text">
         <strong>Temperature:</strong>{" "}
-        {realTimeWeather.data.values.temperature}°C
+        {realTimeWeather.data.values.temperature}°C {/* Display the temperature in Celsius */}
       </p>
       <p className="info-text">
-        <strong>Humidity:</strong> {realTimeWeather.data.values.humidity}%
+        <strong>Humidity:</strong> {realTimeWeather.data.values.humidity}% {/* Display the humidity percentage */}
       </p>
     </div>
   );
